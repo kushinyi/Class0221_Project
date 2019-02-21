@@ -36,13 +36,28 @@ print(ls[1][0])
 print(sorted(mathScores)) #由小排到大
 
 #tuple
-tuple1=(1,2,3,4,5)
-tuple2='1','2','3','4','5'
+#tuple1=(1,2,3,4,5)
+#tuple2='1','2','3','4','5'
 #tuple[3] #取得tuple中的某個元素
-tuple1.index('4')
-print(tuple1+tuple2)
+#tuple1.index('4')
+#print(tuple1+tuple2)
 
-tuple3=('Lisa',23,'Female')
-name,age,sex=tuple3
-print(name,age,sex)
-print(tuple3[0:2])
+#tuple3=('Lisa',23,'Female')
+#name,age,sex=tuple3
+#print(name,age,sex)
+#print(tuple3[0:2])
+
+#Dictionary
+family={}
+family['dad']='Homer'
+print(family)
+family['dad']='Andy'
+print(family)
+
+print(family.get('mom'))
+print(family.pop('dad')) #把dad丟出來並print
+
+family.update({'mom':'Lisa','son':'Bob'})
+print(family)
+
+#Set
